@@ -1,0 +1,761 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"add",
+				"addslashes"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"desta",
+				"destacados"
+			],
+			[
+				"spl",
+				"splits"
+			],
+			[
+				"GA",
+				"GAHelper"
+			],
+			[
+				"cur",
+				"currentItem"
+			],
+			[
+				"curr",
+				"currentItem"
+			],
+			[
+				"appe",
+				"append"
+			],
+			[
+				"_ca",
+				"_category_id"
+			],
+			[
+				"slide",
+				"slider_urls"
+			],
+			[
+				"slid",
+				"slider_urls"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"togg",
+				"toggleArrows"
+			],
+			[
+				"cate",
+				"categoryDescription"
+			],
+			[
+				"GAC",
+				"GACollection"
+			],
+			[
+				"_cat",
+				"_categoryId"
+			],
+			[
+				"_cate",
+				"_categoryData"
+			],
+			[
+				"Cate",
+				"CategoryMode"
+			],
+			[
+				"cat",
+				"categoryDescription"
+			],
+			[
+				"ap",
+				"append"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"toggl",
+				"toggleItem1"
+			],
+			[
+				"appen",
+				"appendTo"
+			],
+			[
+				"_",
+				"_category_id"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"header",
+				"headerContent"
+			],
+			[
+				"MSG_",
+				"MSG_BODY"
+			],
+			[
+				"MSG",
+				"MSG_FROM"
+			],
+			[
+				"POS",
+				"POST_FIELD_EMAIL"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"al",
+				"alt	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "$(document).on(\"ready\", function() {});\n\n\n$(function() {\n\n\n	//$(\"img\").css({\"max-height\": $(window).height()});\n\n});\n\n//1380*920\n\n\n\nvar MissPiesApp = angular.module(\"MissPiesApp\", []);\n\nfunction CampaignController() {\n	console.info(\"[CampaignController]\");\n\n\n\n	var index = 0;\n	$(\"#campaign li\").toggle(\"false\");\n	console.log(($(\"#campaign li\")[index]));\n	($(\"#campaign li\").first()).toggle(\"true\").addClass(\"active\");\n	$(\"#campaign\").fadeIn();\n	setInterval(function() {\n			var $lis = $(\"#campaign li\");\n			var indexAux = index;\n			if (index < $lis.length-1) {\n				index++;\n			} else {\n				index = 0;\n			}\n			var old = $($lis.get(indexAux));\n			$lis.removeClass(\"active\");\n			var newLi = $($lis.get(index));\n			newLi.addClass(\"active\");\n			old.fadeOut({\n				duration: 100,\n				complete: function() {\n					newLi.fadeIn({\n						duration: 100\n					});\n				}\n			});\n			console.log(\"[Campaign Slider Active:\" + index + \"]\");\n		},\n		3500);\n}",
+			"file": "/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/misspiess2014.js",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 934,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/home.php",
+			"settings":
+			{
+				"buffer_size": 4096,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "html, body { \n	height: 100%; \n	width: 100%;\n} \nbody {\n	background-color: #FFFFFF;\n}\n\nul#campaign{\n		padding: 0px;\n		margin: 0px;\n	}\n	\ndiv#section{\n	padding: 10px;\n	width: 100%;\n	height: 100%;\n}\ndiv#menu{\n	padding: 10px;\n	width: 233px;\n	height: 100%;\n}\n\nul#campaign{\n	display: none;\n	list-style-type: none;\n}\n\n\n@media (max-width: 321px) { \n	ul#campaign{\n		padding: 0px;\n		margin: 0px;\n	}\n	ul#campaign img {\n		max-width: 287px;\n	}\n	html, body { \n		overflow:auto;\n	} \n}\n\n@media (min-width: 480px) { \n	ul#campaign img {\n		max-width: 451px;\n	}\n}\n\n\n/* Small devices (tablets, 768px and up) */\n@media (min-width: 768px) { \n	ul#campaign img {\n		max-width: 465px;\n	}\n}\n\n/* Medium devices (desktops, 992px and up) */\n@media (min-width: 992px) { \n	ul#campaign img{\n		max-width: 695px;\n	}\n	html, body { \n		overflow:hidden;\n	} \n	div.row {\n		display: -webkit-inline-box;\n	}\n}\n\n/* Large devices (large desktops, 1200px and up) */\n@media (min-width: 1200px) { \n	ul#campaign img{\n		max-width: 961px;\n		max-height: 616px;\n	}\n\n	img {\n		max-width: 1380px;\n		max-height: 920px;\n	}\n }",
+			"file": "/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/style.css",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 1062,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/quadramma/Desktop/siteaw14/index.html",
+			"settings":
+			{
+				"buffer_size": 3597,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 265.0,
+		"selected_items":
+		[
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"",
+				"HTMLBeautify"
+			],
+			[
+				"JS",
+				"Format: Javascript"
+			],
+			[
+				"HTML",
+				"HTMLBeautify"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"ht",
+				"HTMLBeautify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/style.css",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/public/style.css",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/public/misspiess2014.js",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/public/slider.js",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/public/home.php",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/index.php",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/home.php",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/filosofia.php",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/locales.php",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/coleccion.php",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/campania.php",
+		"/C/Users/quadramma/qmGIT/MissPiesSite2014/contacto.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/head.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/NMSAppController.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/forms.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/navbar.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/GaController.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/home.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/home_text.json",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/site.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/navbar.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/head.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/external_navbar.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/project.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/site.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/external_forms.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/forms.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/product.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/external_contact.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/GaController.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/home.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/contact.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/product_body.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/projects.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/file.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/upload.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/product.items.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/gafront.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/home_text.json",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/ConfigController.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/ga.config.slider.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/product.edit.html",
+		"/C/Users/quadramma/qmGIT/NMS/public/js/services/ga/GAFileService.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/GAFileService.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/style.css",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/project_body.php",
+		"/C/Program Files (x86)/Git/doc/git/html/git-branch.html",
+		"/C/Users/quadramma/qmGIT/NMS/public/views/nodes/category/category.items.html",
+		"/C/Users/quadramma/qmGIT/NMS/public/views/nodes/product/product.items.html",
+		"/C/Users/quadramma/qmGIT/NMS/public/views/nodes/project/project.items.html",
+		"/C/Users/quadramma/qmGIT/NMS/public/js/controllers/ga/CategoryController.js",
+		"/C/Users/quadramma/qmGIT/NMS/public/js/routes/ga/appRoutes.category.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/CategoryController.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/ga.header.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/ga.categories 2.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/project.items.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/appRoutes.category 2.js",
+		"/C/Users/quadramma/qmGIT/NMS/public/js/routes/ga/appRoutes.ga.js",
+		"/C/Users/quadramma/qmGIT/NMS/public/css/ga.style.css",
+		"/C/Users/quadramma/qmGIT/NMS/public/views/layouts/ga/ga.uploads.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/contact 2.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/index 3.php",
+		"/C/Users/quadramma/qmGIT/NMS/public/js/controllers/ga/ConfigController.js",
+		"/C/Users/quadramma/qmGIT/NMS/public/js/config/app.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/jlm.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/gaModule.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/index 2.php",
+		"/C/Users/quadramma/qmGIT/NMS/public/views/layouts/ga/ga.home.html",
+		"/C/Users/quadramma/qmGIT/NMS/public/views/layouts/ga/ga.header.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/index.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/header.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/collection.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/filosofy.php",
+		"/C/Users/quadramma/qmGIT/GAIluminacion/public/js/controllers/GaController.js",
+		"/C/Users/quadramma/qmGIT/GAIluminacion/public/js/other/gafront.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/ga.categories.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/category.items.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/category.items2.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/appRoutes.category.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/category.edit.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/category.create.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/prjcategory.items.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/prjcategory.create.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/prjcategory.edit.html",
+		"/C/Users/quadramma/qmGIT/GAIluminacion/public/index.html",
+		"/C/Users/quadramma/qmGIT/GAIluminacion/public/views/ga.layout.html",
+		"/C/Users/quadramma/qmGIT/GAIluminacion/public/js/config/appRoutes.js",
+		"/C/Users/quadramma/qmGIT/GAIluminacion/public/js/config/app.js",
+		"/C/Users/quadramma/qmGIT/GAIluminacion/bower.json",
+		"/C/Users/quadramma/qmGIT/GAIluminacion/.gitignore",
+		"/C/Users/quadramma/qmGIT/GAIluminacion/.bowerrc",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/state.js",
+		"/C/Users/quadramma/qmGIT/NMS/.bowerrc",
+		"/C/Users/quadramma/Google Drive/quadramma/neutrogena/index.html",
+		"/C/Users/quadramma/Google Drive/quadramma/neutrogena/css/style.css",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/tmpl_body_ga_main.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/category.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/destacado.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/gapi.php",
+		"/C/Users/quadramma/qmGIT/NMS/public/index.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/group.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/profile.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/config.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/tndb.php",
+		"/C/Users/quadramma/SinglePageAppNodeAngular/public/core.js",
+		"/C/Users/quadramma/SinglePageAppNodeAngular/server.js",
+		"/C/Users/quadramma/SinglePageAppNodeAngular/public/index.html",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/index 5.php",
+		"/C/Users/quadramma/qmGIT/scrollToggle/index.html",
+		"/C/Users/quadramma/SinglePageAppNodeAngular/package.json",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/ga 2.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/gapi 2.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/index 4.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/ga.pluggins.css",
+		"/C/Users/quadramma/Google Drive/quadramma/ga/pagina/_api/config.php",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/gafront.min.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/jquery.ga.pluggins.min.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/flexslider.css",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/prettyPhoto.css",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/animate.css",
+		"/C/Users/quadramma/temp/ga.pluggins.css",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/owl.carousel.css",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/jquery.scrollbox.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/jquery.BlackAndWhite.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/animate.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/owl.carousel.js",
+		"/C/Users/quadramma/AppData/Local/Temp/fz3temp-1/jquery.flexslider-min.js"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"/",
+			"\\",
+			"'",
+			"pushState",
+			"saveHomeSlides",
+			"data.",
+			"para",
+			"editItem",
+			"form",
+			"collection",
+			".item",
+			"work_img",
+			"#projects",
+			"filosofy",
+			"collection",
+			"prjcategory",
+			"bindNavMenuLinkActiveOnClick",
+			"SET ",
+			"GAHelper",
+			"active",
+			"getRelatedItems",
+			"changePageAsync",
+			"areYouSure",
+			"redraw",
+			"log",
+			"console.log",
+			"ajax",
+			"autoLiActiveBasedOnScroll",
+			"GAHelper",
+			"projects",
+			"projects_link",
+			"deselectNavMenuLinks",
+			"footer",
+			".top_slider .slide2 .flex_caption1 .title4",
+			"title4",
+			".slide2",
+			"body",
+			"drawGACollections",
+			"gaCollections",
+			"GACollection",
+			"DINNextLTProLight",
+			"DINNextLTProUltraLight",
+			"DINNextLTProRegular",
+			"GAImagePath",
+			">",
+			"echo",
+			"Collection",
+			"Collec",
+			"productModal",
+			"Proyectos",
+			"cbCategory",
+			"fillProductView",
+			"bindButtonEdit",
+			"redrawProducts",
+			"fillImagesListView",
+			"saveProductHandler",
+			"uploadPath",
+			"ajax",
+			"saveProductHandler",
+			"btn-saveProduct",
+			"uploadPath",
+			"descrip",
+			"flexslider",
+			"single_portfolio_post",
+			"productModal",
+			"ga-collection-expand",
+			"DINNextLTProUltraLight",
+			"productModal",
+			"padbot20",
+			"ga-col",
+			"ga-cole",
+			"_categoryId",
+			"console",
+			"coll",
+			"colec",
+			"body",
+			"appSiteRootPath",
+			"<?=$GLOBALS[\"appSiteRootPath\"]?>",
+			"file",
+			"container",
+			"body",
+			"90",
+			"90px",
+			"min-height",
+			"blog",
+			"akamahid",
+			"single_page",
+			"container",
+			"src",
+			"uploadButtonImage",
+			"category",
+			"cbCategory",
+			"saveProductHandler",
+			"upload",
+			"bindUploadInput",
+			"redraw",
+			"redrawProducts",
+			"session.productCollection",
+			"bindDeletePopupButtons",
+			"bindButtonDelete",
+			"delete",
+			"jsonProductsCollection",
+			"ajax",
+			"collection",
+			"loadProducts",
+			"jsonProductsCollection",
+			"cursor",
+			"cloneWrapper",
+			"select",
+			"DINNextLTProLight",
+			"work_info",
+			"DINNextLTProRegular",
+			"PRO",
+			"portfolio-post.html",
+			"Ginger Beast",
+			"17 March, 2041",
+			"cole",
+			"colee",
+			"DINNextLTProRegular",
+			"CabourgLightRegular",
+			"DINNextLTProMedium",
+			"CabourgLightRegular",
+			"background-im",
+			"CabourgLightRegular",
+			"projects_link",
+			"projects",
+			"cabo",
+			"navme"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"data.files.",
+			"#proyectos",
+			"filosofia",
+			"category_projects",
+			"_category_id",
+			"ga-coll",
+			"",
+			"containerDisabled",
+			"cloneCategoryContainer",
+			"project.php",
+			"Descripcion",
+			"11 de abril, 2014",
+			"#sidebar",
+			"class=\"panel left sidebar\"",
+			".sidebar",
+			"$GLOBALS[",
+			"s2-text"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/misspiess2014.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								928,
+								928
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3474,
+								3482
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 514.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/quadramma/AppData/Local/Temp/fz3temp-2/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1062,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/quadramma/Desktop/siteaw14/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3597,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2985,
+								3021
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1083.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "misspies.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 349.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
