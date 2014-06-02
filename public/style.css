@@ -1,45 +1,353 @@
-html, body { 
-height: 100%; 
-width: 100%;
-margin: 0; 
-padding: 0;
-} 
+
+
+.preloader_hide {opacity:0;}
+#preloader {
+    position: fixed;
+    left: 9%;
+    top: 46%;
+    width: 90%;
+    margin: -16px 0 0 -16px;
+    display: block;
+}
+
+
+
+
+
+html {
+    overflow-x: hidden;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
 body {
-	background-color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+ul#responsiveUl {
+    padding: 0px;
+    margin: 0px;
+}
+div#section {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+div#menu {
+    padding: 10px;
+    width: 233px;
+    height: 335px;
+}
+div#menu img {
+}
+div#social {
+    padding-left: 25px;
+}
+div#social img {
+    padding-left: 14px;
+}
+div#social img.tt {
+    width: 33px;
 }
 
 
-
-img {
-	max-width: 1380px;
-	max-height: 920px;
+div#section {
+    margin-top: 30px;
 }
 
-div#section{
-	padding: 10px;
-	width: 100%;
-	height: 100%;
+ul.collection {
+    width: 90%;
 }
-div#menu{
-	padding: 10px;
-	width: 233px;
-	height: 100%;
+ul.collection li {
+    display: inline-block;
+}
+ul.collection li img {
+    width: 131px;
+}
+ul.collection li:hover {
+	/*
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    */
+    -webkit-filter: brightness(80%);
 }
 
-ul#campaign{
-	display: none;
-	list-style-type: none;
+.modal-header {
+	border: 0px;
+}
+.modal-content{
+	/*background: transparent;*/
 }
 
+ul#responsiveUl {
+    display: none;
+    list-style-type: none;
+}
+div.button {
+    width: 140px;
+    height: 20px;
+    position: absolute;
+    /*
+	border: 1px solid;
+	*/
+}
+
+
+ul#responsiveUl img.text{
+    position: absolute;
+    width: 260px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
+div.button.filosofia {
+    margin-top: 162px;
+    margin-left: 27px;
+}
+div.button.campaign {
+    margin-top: 120px;
+    margin-left: 27px;
+}
+div.button.coleccion {
+    margin-top: 202px;
+    margin-left: 28px;
+}
+div.button.locales {
+    margin-top: 241px;
+    margin-left: 16px;
+}
+
+div.button.contacto {
+    margin-top: 277px;
+    margin-left: 23px;
+}
+div.button.fb {
+    margin-top: 324px;
+    width: 24px;
+    height: 31px;
+    margin-left: 30px;
+}
+div.button.tt {
+    margin-top: 325px;
+    width: 38px;
+    margin-left: 55px;
+    height: 31px;
+}
+div.button:hover {
+    cursor: pointer;
+}
+div.button.campaign:hover, div.button.campaign.selected {
+    background-image: url(img/campaign.png);
+    background-repeat: no-repeat;
+    /*
+    background-position-x: 27px;
+    background-position-y: 2px;
+    */
+}
+div.button.filosofia:hover, div.button.filosofia.selected {
+    background-image: url(img/filosofia.png);
+    background-repeat: no-repeat;
+    /*
+    background-position-x: 27px;
+    background-position-y: 4px;
+    */
+}
+div.button.coleccion:hover, div.button.coleccion.selected {
+    background-image: url(img/coleccion.png);
+    background-repeat: no-repeat;
+    /*
+    background-position-x: 28px;
+    background-position-y: 4px;
+    */
+}
+div.button.locales:hover, div.button.locales.selected {
+    background-image: url(img/locales.png);
+    background-repeat: no-repeat;
+    /*
+    background-position-x: 16px;
+    background-position-y: 0px;
+    */
+}
+div.button.contacto:hover, div.button.contacto.selected {
+    background-image: url(img/contacto.png);
+    background-repeat: no-repeat;
+   /*
+    background-position-x: 23px;
+    background-position-y: -5px;
+    */
+}
+
+
+div.button.fb {
+    background-image: url(img/fb.jpg);
+    background-repeat: no-repeat;
+    /*
+    background-position-x: 3px;
+    background-position-y: 0px;
+    */
+    background-size: 9px 17px;
+}
+div.button.fb:hover, div.button.fb.selected {
+    background-image: url(img/fb_hover.jpg);
+    background-repeat: no-repeat;
+    /*
+    background-position-x: 3px;
+    background-position-y: 0px;
+    */
+}
+
+
+div.button.tt {
+    background-image: url(img/tt.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: 23px 16px;
+}
+
+div.button.tt:hover, div.button.tt.selected {
+    background-image: url(img/tt_hover.jpg);
+    background-repeat: no-repeat;
+     background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: 23px 16px;
+}
+
+
+@media (max-width: 321px) {
+    ul#responsiveUl {
+        padding: 0px;
+        margin: 0px;
+    }
+    ul#responsiveUl img {
+        max-width: 287px;
+    }
+    html, body {
+    }
+    #preloader {
+        left: 9%;
+        top: 46%;
+        width: 90%;
+    }
+}
+@media (min-width: 480px) {
+    ul#responsiveUl img {
+        max-width: 451px;
+    }
+    #preloader {
+        left: 8%;
+        top: 35%;
+        width: 90%;
+    }
+   
+}
+@media (min-width: 568px) {
+    ul#responsiveUl img {
+        max-width: 548px;
+    }
+    #preloader {
+        left: 7%;
+        top: 30%;
+        width: 90%;
+    }
+}
+@media (min-width: 600px) {
+    ul#responsiveUl img {
+        max-width: 578px;
+    }
+    #preloader {
+        left: 7%;
+        top: 40%;
+        width: 90%;
+    }
+
+}
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+ @media (min-width: 768px) {
+    ul#responsiveUl img {
+        max-width: 733px;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+ @media (min-width: 800px) {
+    ul#responsiveUl img {
+        max-width: 733px;
+    }
+    #preloader {
+        left: 16%;
+        top: 38%;
+        width: 70%;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+ @media (min-width: 992px) {
+    ul#responsiveUl img {
+        max-width: 695px;
+    }
+    div.row {
+        display: inline-flex;
+    }
+    div#section {
+        margin-top: 0px;
+    }
 
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1024px) {
+    div#section{
+        width: 80%;    
+    }
+    #preloader {
+        left: 21%;
+        width: 60%;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+ @media (min-width: 1200px) {
+    ul#responsiveUl img {
+        max-width: 961px;
+        max-height: 616px;
+    }
+    img {
+        max-width: 1380px;
+        max-height: 920px;
+    }
+    #preloader {
+        left: 29%;
+        width: 40%;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1800px) {
+    ul#responsiveUl img {
+        max-width: 1400px;
+		max-height: 930px;
+    }
+    div.row {
+		margin-left: -265px;
+	}
+	ul.collection li img {
+		width: 168px;
+	}
+     #preloader {
+        left: 44%;
+    }
+}
+
+ @media (min-width: 1920px) {
+    #preloader {
+        left: 23%;
+        width: 50%;
+    }
  }
